@@ -118,7 +118,8 @@ int main() {
     }
 
     long long int end = GetTickCount();
-    Insertion(root, 5261893, "GP", "Pawlak");
+    Insertion(root, 5261893, "Eliha", "dhgkdKl");
+    deleteNode(root, 5261893);
     double elapsed = (end - begin)*1e-3;
     printf("Time measured: %.3f seconds.\n", elapsed);
     fclose(file);
