@@ -231,6 +231,5 @@ int main() {
     searchAL(creatennodes(5), 13);
     searchAM(34, 5, AM);
     fclose(file);
-    printf("pzdr GP\n");
     return 0;
 }
