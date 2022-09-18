@@ -63,7 +63,6 @@ bool Search(struct Node *BSTroot, int idx){
     else {return Search(BSTroot->rightchild, idx);}
 }
 struct Node *deleteNode(struct Node *root, int idx) {
-    // Find the node and delete it
     if (root == NULL)
         return root;
 
