@@ -7,7 +7,7 @@
 
 #define max(a, b) (((a) > (b)) ? (a) : (b))
 
-// Create Node
+
 struct Node {
     int key;
     char name[13];
@@ -200,7 +200,8 @@ int main() {
         insertNode(root, atoi(tidx), tname, tsname);
     }
 
-    insertNode(root, 5261893, "GP", "Pawlak");
+    insertNode(root, 5261893, "hdwdqakjh", "efndlfpk");
+    deleteNode(root, 4875342);
     fclose(file);
     return 0;
 }
