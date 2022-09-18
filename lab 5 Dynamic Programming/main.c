@@ -131,6 +131,8 @@ int main()
     int val[100];
     int wt[100];
     int W = 50;
+    int precision[100];
+    int j;
     char* line;
     FILE *file = fopen("graph", "r");
     while(fgets(line, 5, file)){
@@ -143,8 +145,8 @@ int main()
     int n = sizeof(val) / sizeof(val[0]);
     greedy_knapsack_low(num, W, val, wt);
     greedy_knapsack_up(num, W, val, wt);
+    precision[j] += greedy_knapsack_up(20000, 100+j*50, val, wt) - greedy_knapsack_low(20000, 100+j*50, val, wt);
     printf("%d", knapSackDP(W, wt, val, n));
     printf("%d", knapSackBF(W, wt, val, n));
     return 0;
 }
-
